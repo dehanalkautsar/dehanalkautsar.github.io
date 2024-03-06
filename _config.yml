@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Muhammad Dehan Al Kautsar # the website title (if blank, full name will be used instead)
+title: blank # the website title (if blank, full name will be used instead)
 first_name: Muhammad
 # middle_name: Dehan Al Kautsar
 last_name: Dehan Al Kautsar

@@ -14,7 +14,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-
+A driven and eager Computer Science student at Institut Teknologi Bandung (ITB) currently studying for a master's degree in Computer Science / Informatics, specializing in Intelligent Systems. I'm a dedicated individual with a passion for Natural Language Processing and Data Science. I thrive on exploring the depths of these fields and I'm particularly drawn to roles in AI & ML engineering and data science. My goal is to make a meaningful impact and excel in the ever-evolving world of technology.
 
 <!-- Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
