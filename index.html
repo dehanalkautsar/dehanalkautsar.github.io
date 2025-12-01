@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Academic Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== Header / Nav ===== -->
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <!-- <div class="brand-logo">M</div> -->
+        <div class="brand-title">
+          <span>Muhammad Dehan Al Kautsar</span>
+          <!-- <span>a.k.a Dehan</span> -->
+        </div>
+      </div>
+
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <span class="theme-icon" id="themeIcon">🐻</span>
+        </button>
+
+        <button class="nav-toggle" id="navToggle">Menu</button>
+
+        <nav id="navbar">
+          <button class="nav-link active" data-target="intro">Intro</button>
+          <button class="nav-link" data-target="education">Education</button>
+          <button class="nav-link" data-target="publications">Publications</button>
+          <button class="nav-link" data-target="news">News</button>
+          <button class="nav-link" data-target="contact">Contact</button>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- Intro -->
+    <section id="intro">
+      <div class="section-card">
+        <div class="intro-layout">
+          <div>
+            <!-- <div class="intro-highlight">
+              <span>👋 Currently available for collaboration</span>
+            </div> -->
+            <h1 class="intro-heading">Muhammad <strong>Dehan</strong> Al Kautsar</h1>
+            <p class="intro-text">
+              I am a <strong>[Your role / degree]</strong> focusing on
+              <strong>[your research / interests]</strong>. My work explores
+              <strong>[short summary of what you do or like]</strong>. I enjoy
+              combining rigorous methods with practical applications that make a
+              real-world impact.
+            </p>
+            <p class="intro-text">
+              On this page you’ll find a brief overview of my education,
+              selected publications, recent news, and how to get in touch.
+            </p>
+            <div class="intro-tags">
+              <span class="tag">NLP: Multilinguality in LLM</span>
+              <span class="tag">NLP: Dialogue System</span>
+              <span class="tag">Data Scientist</span>
+              <!-- <span class="tag">Your Topic</span> -->
+            </div>
+          </div>
+
+          <div class="intro-right">
+            <div class="avatar-simple">
+              <img
+                src="assets/profiles/dehan-zoom.jpg" alt="Dehan" class="avatar-photo"
+              />
+            </div>
+            <!-- <div class="avatar-label">Name</div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+      <div class="section-card">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Education</div>
+            <!-- <div class="section-subtitle">Where I studied and what I learned.</div> -->
+          </div>
+          <span class="pill">Academic Background</span>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-main">
+              M.Sc. in Informatics (Intelligence System)
+              <span class="timeline-university">— Institut Teknologi Bandung</span>
+            </div>
+            <div class="timeline-meta">
+              2023 - 2024<br />
+              Bandung, Indonesia
+            </div>
+            <div class="timeline-sub">
+              Final GPA: 3.96 / 4.00
+            </div>
+            <div class="timeline-sub">
+              Thesis: “End-to-end Fused Dialogue System in Open-Source Large Language Model”
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-main">
+              B.Sc. in Informatics
+              <span class="timeline-university">— Institut Teknologi Bandung </span>
+            </div>
+            <div class="timeline-meta">
+              2019 – 2023<br />
+              Bandung, Indonesia
+            </div>
+            <div class="timeline-sub">
+                Final GPA: 3.93 / 4.00
+            </div>
+            <div class="timeline-sub">              
+              Final Task: “End-to-end Task-oritented Dialogue System in Indonesia”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section id="publications" class="publications">
+    <div class="section-card">
+        <div class="section-header">
+        <div>
+            <div class="section-title">Publications</div>
+            <div class="section-subtitle">Selected papers & preprints.</div>
+        </div>
+        <span class="pill">Research Output</span>
+        </div>
+        
+        <!-- Toggle button -->
+        <button
+        type="button"
+        id="pubToggleBtn"
+        class="pub-toggle-btn"
+        aria-expanded="false"
+        aria-controls="pub-list"
+        >
+        Show all publications
+        </button>
+        
+        <div class="pub-list" id="pub-list">
+
+        <div class="pub-item pub-item--extra">
+            <div class="pub-title">
+            Coauthor, E., Your Name, F. (2021).
+            Yet Another Publication.
+            </div>
+            <div class="pub-venue">
+            In: <em>Some Conference</em>.
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                PDF
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--extra">
+            <div class="pub-title">
+            Coauthor, E., Your Name, F. (2021).
+            Yet Another Publication.
+            </div>
+            <div class="pub-venue">
+            In: <em>Some Conference</em>.
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                PDF
+            </a>
+            </div>
+        </div>
+            
+        <!-- Highlighted / always visible -->
+        <div class="pub-item pub-item--featured">
+            <div class="pub-title">
+            Author, A., Your Name, B. (2024).
+            An Awesome Paper Title Goes Here.
+            </div>
+            <div class="pub-venue">
+            In: <em>Conference / Journal Name</em>.
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                PDF / Link
+            </a>
+            </div>
+        </div>
+
+        <!-- Example of extra publications: hidden until expanded -->
+        <div class="pub-item pub-item--extra">
+            <div class="pub-title">
+            Your Name, D. (2022).
+            Some Other Cool Paper.
+            </div>
+            <div class="pub-venue">
+            <em>Journal of Nice Results</em>.
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                PDF
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--featured">
+            <div class="pub-title">
+            Your Name, C. (2023).
+            Another Very Interesting Research Work.
+            </div>
+            <div class="pub-venue">
+            <em>Preprint</em> — arXiv:xxxx.xxxxx
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                arXiv
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--extra">
+            <div class="pub-title">
+            Coauthor, E., Your Name, F. (2021).
+            Yet Another Publication.
+            </div>
+            <div class="pub-venue">
+            In: <em>Some Conference</em>.
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                PDF
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--featured">
+            <div class="pub-title">
+            Your Name, C. (2023).
+            Another Very Interesting Research Work.
+            </div>
+            <div class="pub-venue">
+            <em>Preprint</em> — arXiv:xxxx.xxxxx
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                arXiv
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--featured">
+            <div class="pub-title">
+            Your Name, C. (2023).
+            Another Very Interesting Research Work.
+            </div>
+            <div class="pub-venue">
+            <em>Preprint</em> — arXiv:xxxx.xxxxx
+            </div>
+            <div>
+            <a class="pub-link" href="#" target="_blank" rel="noopener noreferrer">
+                arXiv
+            </a>
+            </div>
+        </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- News -->
+    <section id="news">
+      <div class="section-card">
+        <div class="section-header">
+          <div>
+            <div class="section-title">News</div>
+            <div class="section-subtitle">Recent updates & highlights.</div>
+          </div>
+          <span class="pill">What’s New</span>
+        </div>
+
+        <!-- Toggle button -->
+        <button
+          type="button"
+          id="newsToggleBtn"
+          class="news-toggle-btn"
+          aria-expanded="false"
+          aria-controls="news-list"
+        >
+          Show all news
+        </button>
+        <div class="news-list" id="news-list">
+          <div class="news-item">
+            <div class="news-date">Nov 2025</div>
+            <div>
+              Our latest paper on [topic] was accepted at
+              <strong>Conference Name</strong>. I will present it in [location].
+            </div>
+          </div>
+
+          <div class="news-item news-item--extra">
+            <div class="news-date">Sep 2025</div>
+            <div>
+              Started a new position as <strong>Research Assistant</strong>
+              at <strong>Lab / Group Name</strong>.
+            </div>
+          </div>
+
+          <div class="news-item">
+            <div class="news-date">Jun 2024</div>
+            <div>
+              Gave an invited talk on <strong>[your topic]</strong> at
+              <strong>Event / Meetup</strong>.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="section-card">
+        <div class="section-header">
+          <div>
+            <div class="section-title">Contact</div>
+            <div class="section-subtitle">Say hello or discuss a project.</div>
+          </div>
+          <span class="pill">Get in Touch</span>
+        </div>
+
+        <div class="contact-grid">
+          <div>
+            <div class="contact-list">
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-email">
+                  <a href="mailto:Muhammad.Dehan@mbzuai.ac.ae"><i>muhammad.dehan@mbzuai.ac.ae</i></a>
+                </div>
+              </div>
+
+              <div>
+                <div class="contact-label">Location</div>
+                <div class="contact-value">Abu Dhabi, United Arab Emirates</div>
+              </div>
+
+              <div>
+                <div class="contact-label">Profiles</div>
+                <div class="contact-chip-row">
+                  <a href="https://github.com/your-username" target="_blank" class="">
+                    <img src="assets/icons/github.svg" alt="GitHub" class="contact-icon github">
+                  </a>
+                  <a href="https://www.linkedin.com/in/your-profile" target="_blank" class="">
+                    <img src="assets/icons/linkedin.svg" alt="linkedin" class="contact-icon linkedin">
+                  </a>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="">
+                    <img src="assets/icons/gscholar.svg" alt="Gscholar" class="contact-icon gscholar">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>© <span id="year"></span> Muhammad Dehan Al Kautsar</div>
+    <div>Last edited on 2025/12/02</div>
+  </footer>
+
+  <!-- Main JS -->
+  <script src="script.js"></script>
+</body>
+</html>
