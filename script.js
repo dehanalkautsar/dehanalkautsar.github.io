@@ -135,3 +135,8 @@ document.addEventListener("DOMContentLoaded", () => {
     yearSpan.textContent = new Date().getFullYear();
   }
 });
+
+// Activate smooth transitions only after page loads
+window.addEventListener("load", () => {
+  document.documentElement.classList.add("theme-transition");
+});

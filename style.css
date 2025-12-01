@@ -3,12 +3,12 @@
 /* Dark: dark blue + cool blue accent (Wendy-ish) */
 
 :root {
-  --bg: #f9fafb;
-  --bg-alt: #ffffff;
+  --bg: #e4e4e0;
+  --bg-alt: #f3f3f2;
   --accent: #f5b620;
   --accent-soft: #fef3c7;
   --text: #111827;
-  --text-muted: #6b7280;
+  --text-muted: #4a4e57;
   --border: #e5e7eb;
   --radius-lg: 12px;
   --radius-pill: 999px;
@@ -29,6 +29,13 @@ html[data-theme="dark"] .contact-icon.github   { content: url("assets/icons/gith
 html[data-theme="dark"] .contact-icon.linkedin { content: url("assets/icons/linkedin-dark.svg"); }
 html[data-theme="dark"] .contact-icon.gscholar  { content: url("assets/icons/gscholar-dark.svg"); }
 
+html.theme-transition * {
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
 
 /* ===== Global ===== */
 
@@ -275,30 +282,68 @@ section {
   gap: 0.4rem;
 }
 
-.avatar-simple {
-  width: 110px;
-  height: 110px;
-  border-radius: 50%;
-  border: 3px solid var(--accent);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 2rem;
+.avatar-wrapper {
+  position: relative;
+  display: block;   /* so tooltip width is based on avatar */
+  width: 100%;
 }
 
+/* your existing avatar is fine, keep this */
 .avatar-simple {
   width: 180px;
   height: 180px;
   border-radius: 50%;
-  border: 3px solid var(--accent);
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;      /* make the image clip to the circle */
+  overflow: hidden;
+  margin: 0 auto;
 }
 
-/* new */
+.avatar-photo {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+/* tooltip box */
+.avatar-tooltip {
+  position: absolute;
+  top: calc(100% + 10px);   /* below the avatar; use bottom: calc(100% + 10px) for above */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--bg-alt);
+  color: var(--text);
+  padding: 8px 12px;
+  font-size: 0.78rem;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  max-width: 980px;
+  text-align: center;
+  white-space: normal;
+  line-height: 1.35;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+/* show on hover */
+.avatar-simple:hover + .avatar-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(2px); /* slight slide in */
+}
+
+/* tooltip dark mode */
+html[data-theme="dark"] .avatar-tooltip {
+  background: #111827;
+  color: #f9fafb;
+  border-color: #374151;
+}
+
 .avatar-photo {
   width: 100%;
   height: 100%;
@@ -306,7 +351,6 @@ section {
   object-fit: cover;     /* keeps aspect ratio, fills the circle */
   display: block;
 }
-
 
 .avatar-label {
   font-size: 0.78rem;
@@ -430,7 +474,6 @@ section {
   border: none;
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
-  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -439,7 +482,7 @@ section {
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: none;      /* prevents ALL CAPS */
   transition: background 0.25s ease, color 0.25s ease;
 }
@@ -447,6 +490,7 @@ section {
 /* Collapsed state (default) */
 #pubToggleBtn:not(.expanded) {
   color: #111827;
+  background: #f5b620;
 }
 
 /* Expanded state */
@@ -532,7 +576,6 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   border: none;
   border-radius: 999px;
   padding: 0.4rem 0.9rem;
-  font-size: 0.9rem;
   cursor: pointer;
 }
 
@@ -541,7 +584,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   text-transform: none;      /* prevents ALL CAPS */
   transition: background 0.25s ease, color 0.25s ease;
 }
@@ -549,6 +592,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 /* Collapsed state (default) */
 #newsToggleBtn:not(.expanded) {
   color: #111827;
+  background: #f5b620;
 }
 
 /* Expanded state */
@@ -617,7 +661,7 @@ html[data-theme="dark"] #newsToggleBtn.expanded {
 .contact-icon {
   width: 28px;
   height: 28px;
-  opacity: 0.70;
+  opacity: 0.74;
   transition: opacity .2s;
 }
 .contact-icon:hover {
