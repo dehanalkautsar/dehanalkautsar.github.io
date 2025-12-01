@@ -239,7 +239,7 @@ section {
 
 .intro-heading {
   font-size: 1.8rem;
-  font-weight: 250;
+  font-weight: 450;
   margin-bottom: 0.7rem;
 }
 
@@ -368,7 +368,7 @@ html[data-theme="dark"] .avatar-tooltip {
 .timeline-item {
   padding: 0.8rem 0.9rem;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1.4px solid var(--border);
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   column-gap: 0.8rem;
@@ -410,19 +410,34 @@ html[data-theme="dark"] .avatar-tooltip {
 
 .pub-item {
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1.4px solid var(--border);
   padding: 0.75rem 0.9rem;
+}
+
+.pub-author {
+  font-weight: 200;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
 }
 
 .pub-title {
   font-weight: 500;
   margin-bottom: 0.25rem;
+  font-style: italic;
 }
 
 .pub-venue {
   font-size: 0.78rem;
   color: var(--text-muted);
   margin-bottom: 0.25rem;
+}
+
+.pub-venue .pub-best-paper {
+  font-size: 0.78rem;
+  color: var(--text);
+  background-color: var(--accent);
+  margin-bottom: 0.25rem;
+  padding: 0% 1.5rem;
 }
 
 .pub-link {
@@ -438,7 +453,7 @@ html[data-theme="dark"] .avatar-tooltip {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-8px);
-  border: 1px solid var(--border);
+  border: 1.4px solid var(--border);
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -450,12 +465,8 @@ html[data-theme="dark"] .avatar-tooltip {
     margin-top 0.25s ease,
     padding 0.25s ease,
     border-width 0.25s ease,
-    border 0.25s ease;
+    border 0.05s ease;
 }
-
-/* #pub-list:not(.is-expanded) .pub-item--extra + .pub-item {
-  margin-top: 0;
-} */
 
 /* Visible state (expanded) */
 #pub-list.is-expanded .pub-item--extra {
@@ -465,7 +476,7 @@ html[data-theme="dark"] .avatar-tooltip {
   margin-top: 0.4rem;        /* nice gap between items */
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-width: 1px;
+  border: 1.4px solid var(--border);
 }
 
 /* Optional: basic styling for the toggle button */
@@ -515,7 +526,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 .news-list {
   display: flex;
   flex-direction: column;
-  font-size: 0.86rem;
+  font-size: 0.80rem;
 }
 
 .news-item + .news-item {
@@ -525,14 +536,14 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 .news-item {
   display: flex;
   align-items: baseline;
-  gap: 0.7rem;
+  gap: 0.80rem;
   border-radius: 8px;
-  border: 1px solid var(--border);
+  border: 1.4px solid var(--border);
   padding: 0.6rem 0.8rem;
 }
 
 .news-date {
-  font-size: 0.75rem;
+  font-size: 0.80rem;
   color: var(--text-muted);
   min-width: 5.2rem;
   white-space: nowrap;
@@ -544,7 +555,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-8px);
-  border: 1px solid var(--border);
+  border: 1.3px solid var(--border);
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -556,7 +567,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
     margin-top 0.25s ease,
     padding 0.25s ease,
     border-width 0.25s ease,
-    border 0.25s ease;
+    border 0.05s ease;
 }
 
 /* Visible state (expanded) */
@@ -567,7 +578,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   margin-top: 0.4rem;        /* nice gap between items */
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-width: 1px;
+  border: 1.4px solid var(--border);
 }
 
 /* Optional: basic styling for the toggle button */
