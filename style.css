@@ -362,13 +362,13 @@ html[data-theme="dark"] .avatar-tooltip {
 .timeline {
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.4rem;
 }
 
 .timeline-item {
   padding: 0.8rem 0.9rem;
   border-radius: 8px;
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
   display: grid;
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   column-gap: 0.8rem;
@@ -383,6 +383,11 @@ html[data-theme="dark"] .avatar-tooltip {
 .timeline-university {
   color: var(--text-muted);
 }
+.timeline-university a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 
 .timeline-meta {
   text-align: right;
@@ -410,7 +415,7 @@ html[data-theme="dark"] .avatar-tooltip {
 
 .pub-item {
   border-radius: 8px;
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
   padding: 0.75rem 0.9rem;
 }
 
@@ -453,7 +458,7 @@ html[data-theme="dark"] .avatar-tooltip {
   overflow: hidden;
   opacity: 0;
   transform: translateY(-8px);
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 0;
@@ -476,7 +481,7 @@ html[data-theme="dark"] .avatar-tooltip {
   margin-top: 0.4rem;        /* nice gap between items */
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
 }
 
 /* Optional: basic styling for the toggle button */
@@ -538,7 +543,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   align-items: baseline;
   gap: 0.80rem;
   border-radius: 8px;
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
   padding: 0.6rem 0.8rem;
 }
 
@@ -578,7 +583,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
   margin-top: 0.4rem;        /* nice gap between items */
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border: 1.4px solid var(--border);
+  border: 1.0px solid var(--border);
 }
 
 /* Optional: basic styling for the toggle button */
@@ -730,6 +735,7 @@ footer {
     opacity: 1;
     pointer-events: auto;
     transform: translateY(0);
+    transition: opacity 0.15s ease-out, transform 0.15s ease-out;
   }
 
   main {
