@@ -34,9 +34,9 @@
 
         <nav id="navbar">
           <button class="nav-link active" data-target="intro">Intro</button>
+          <button class="nav-link" data-target="news">News</button>
           <button class="nav-link" data-target="education">Experiences</button>
           <button class="nav-link" data-target="publications">Publications</button>
-          <button class="nav-link" data-target="news">News</button>
           <button class="nav-link" data-target="contact">Contact</button>
         </nav>
       </div>
@@ -58,7 +58,7 @@
               I am a <b>Research Engineer</b> at MBZUAI working on <b>multilinguality and dialogue in NLP</b>. I like tweaking and tinkering with tokenization and representations to understand how LLMs handle underrepresented languages. I am also interested in language code-mixing and code-switching in NLP. My goal is to make those models more inclusive, especially for languages across the Global South.
             </p>
             <p class="intro-text">
-              I also enjoy playing piano and football in my spare time. If you’re interested in collaborating or discussing the research (or anything), feel free to get in touch!
+              I am also playing piano and sports in my spare time. If you’re interested in collaborating or discussing the research (or anything), feel free to get in touch!
             </p>
             <div class="intro-tags">
               <span class="tag">NLP: Multilinguality in LLM</span>
@@ -86,6 +86,86 @@
         </div>
       </div>
     </section>
+
+
+    <!-- News -->
+    <section id="news">
+      <div class="section-card">
+        <div class="section-header">
+          <div>
+            <div class="section-title">News</div>
+            <div class="section-subtitle">Recent updates & highlights.</div>
+          </div>
+          <!-- <span class="pill">What’s New</span> -->
+        </div>
+
+        <!-- Toggle button -->
+        <button
+          type="button"
+          id="newsToggleBtn"
+          class="news-toggle-btn"
+          aria-expanded="false"
+          aria-controls="news-list"
+        >
+          Show all news
+        </button>
+        <div class="news-list" id="news-list">
+          <!-- ADD NEW NEWS HERE -->
+
+
+          <div class="news-item news-item--featured">
+            <div class="news-date">Apr 2026</div>
+            <div>
+              Several papers were accepted! <br> - [1] <em> Evaluating Vision-Language and Large Language Models for Automated Student Assessment in Indonesian Classrooms </em> <br> - [2]<em> Vision Language Models are Confused Tourists </em> <br> - [3] <em> Cultural Benchmarking of LLMs in MSA and Arabic Dialectal Dialogue </em> <br> were accepted at <strong>AIED 2026 Main Conference<sup>[1]</sup></strong> (in Seoul, South Korea), <strong>CVPR 2026 Findings<sup>[2]</sup></strong> (in Denver, USA), and <strong>ACL 2026 Main Conference<sup>[3]</sup></strong> (in San Diego, USA). 😎🗽
+            </div>
+          </div>
+
+          <div class="news-item news-item--featured">
+            <div class="news-date">Oct 2025</div>
+            <div>
+              Our papers titled <br> - <i>Role-Aware Language Models for Secure and Contextualized Access Control in Organizations</i> <br> - <i>Simulating Training Data Leakage in Multiple-Choice Benchmarks for LLM Evaluation</i> <br> was accepted at
+              <strong>AACL-IJCNLP and Eval4NLP 2025</strong> in Mumbai, India!
+            </div>
+          </div>
+
+          <div class="news-item news-item--featured">
+            <div class="news-date">Jul 2025</div>
+            <div>
+              Our papers titled <br> - <i>IndoSafety: Culturally Grounded Safety for LLMs in Indonesian Languages</i> <br> - <i> What Do Indonesians Really Need from Language Technology? A Nationwide Survey</i> <br> was accepted at <strong>EMNLP 2025 Main</strong>. I presented the later in Suzhou, China. Nice to meet you there!🧧
+            </div>
+          </div>
+
+          <div class="news-item news-item--extra">
+            <div class="news-date">Nov 2024</div>
+            <div>
+              Started a new position as <strong>Research Associate I</strong> (now: Research Engineer II) at <strong>Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</strong> under supervision of <u>Fajri Koto</u>.
+            </div>
+          </div>
+
+          <div class="news-item news-item--extra">
+            <div class="news-date">Nov 2023</div>
+            <div>
+              Our paper titled '<i>IndoToD: A multi-domain Indonesian benchmark for end-to-end task-oriented dialogue systems</i>' is accepted and selected as the <b>Best Paper</b> on SEALP 2023 Workshop, co-located with AACL-IJCNLP 2023 in Bali, Indonesia.🏖️🏆
+            </div>
+          </div>
+
+          <div class="news-item news-item--extra">
+            <div class="news-date">Oct 2023</div>
+            <div>
+              I went to Tokyo, Japan to become a delegate of <b>Institut Teknologi Bandung</b> in a technology and cultural exchange program hosted by The <u>University of Electro-Communications (UEC)</u>.🌸
+            </div>
+          </div>
+
+          <div class="news-item news-item--extra">
+            <div class="news-date">Nov 2021</div>
+            <div>
+              Became a finalist of <b>Pusat Prestasi Nasional GEMASTIK - Smart City Division</b>. We developed 'Virtual Hospital', an IoT-based technology to monitor the patient virtually because of the impact of COVID-19.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
 
     <!-- Education -->
     <section id="education">
@@ -201,7 +281,7 @@
               Bandung, Indonesia
             </div>
             <div class="timeline-sub">              
-              Courses: Natural Language Processing, Programming Fundamentals, Introduction to Computation.
+              Courses: Natural Language Processing, Programming Fundamentals, Introduction to Computation
             </div>
           </div>
         </div>
@@ -231,6 +311,41 @@
         </button>
         
         <div class="pub-list" id="pub-list">
+        <!-- ADD MORE PUBLICATION LIST HERE -->
+        <div class="pub-item pub-item--extra">
+            <div class="pub-title">
+            Grounding AI-in-Education Development in Teachers' Voices: Findings from a National Survey in Indonesia
+            </div>
+            <div class="pub-author">
+                Nurul Aisyah, <b>Muhammad Dehan Al Kautsar</b>, Arif Hidayat, Fajri Koto. (2026).
+            </div>
+            <div class="pub-venue">
+            <em>Preprint</em> — arXiv:2604.01630
+            </div>
+            <div>
+            <a class="pub-link" href="https://arxiv.org/pdf/2604.01630" target="_blank" rel="noopener noreferrer">
+                PDF
+            </a>
+            </div>
+        </div>
+
+        <div class="pub-item pub-item--featured">
+            <div class="pub-title">
+                <em>Cultural Benchmarking of LLMs in MSA and Arabic Dialectal Dialogue</em>
+            </div>
+            <div class="pub-author">
+                <b>Muhammad Dehan Al Kautsar</b>, Saeed Almheiri, Momina Ahsan, Bilal Elbouardi, ... , Zhuohan Xie, Junhong Liang, Mohammad Rustom Al Nasar, Preslav Nakov, Fajri Koto. (2026).
+            </div>
+            <div class="pub-venue">
+            In: <em>ACL 2026 Main</em>
+            </div>
+            <div>
+            <a class="pub-link" href="https://www.google.com" target="_blank" rel="noopener noreferrer">
+                PDF (Coming soon)
+            </a>
+            </div>
+        </div>
+
         <div class="pub-item pub-item--extra">
             <div class="pub-title">
             Vision Language Models are Confused Tourists
@@ -239,7 +354,7 @@
                 Patrick Amadeus Irawan, Ikhlasul Akmal Hanif, <b>Muhammad Dehan Al Kautsar</b>, Genta Indra Winata, Fajri Koto, Alham Fikri Aji. (2025).
             </div>
             <div class="pub-venue">
-            <em>Preprint</em> — arXiv:2511.17004
+            In: <em>CVPR 2026 Findings</em>
             </div>
             <div>
             <a class="pub-link" href="https://arxiv.org/pdf/2511.17004" target="_blank" rel="noopener noreferrer">
@@ -266,7 +381,7 @@
         </div>
             
         <!-- Highlighted / always visible -->
-        <div class="pub-item pub-item--featured">
+        <div class="pub-item pub-item--extra">
             <div class="pub-title">
                 <em>IndoSafety: Culturally Grounded Safety for LLMs in Indonesian Languages</em>
             </div>
@@ -342,7 +457,7 @@
                 Nurul Aisyah, <b>Muhammad Dehan Al Kautsar</b>, Arif Hidayat, Raqib Chowdhury, Fajri Koto. (2025).
             </div>
             <div class="pub-venue">
-            <em>Preprint</em> — arXiv:2506.04822
+            In: <em>AIED 2026 Main Conference</em>
             </div>
             <div>
             <a class="pub-link" href="https://arxiv.org/pdf/2506.04822" target="_blank" rel="noopener noreferrer">
@@ -406,77 +521,6 @@
     </section>
 
 
-    <!-- News -->
-    <section id="news">
-      <div class="section-card">
-        <div class="section-header">
-          <div>
-            <div class="section-title">News</div>
-            <div class="section-subtitle">Recent updates & highlights.</div>
-          </div>
-          <!-- <span class="pill">What’s New</span> -->
-        </div>
-
-        <!-- Toggle button -->
-        <button
-          type="button"
-          id="newsToggleBtn"
-          class="news-toggle-btn"
-          aria-expanded="false"
-          aria-controls="news-list"
-        >
-          Show all news
-        </button>
-        <div class="news-list" id="news-list">
-          <!-- ADD NEW NEWS HERE -->
-
-
-          <div class="news-item news-item--featured">
-            <div class="news-date">Oct 2025</div>
-            <div>
-              Our papers titled <br> - <i>Role-Aware Language Models for Secure and Contextualized Access Control in Organizations</i> <br> - <i>Simulating Training Data Leakage in Multiple-Choice Benchmarks for LLM Evaluation</i> <br> was accepted at
-              <strong>AACL-IJCNLP and Eval4NLP 2025</strong> in Mumbai, India!
-            </div>
-          </div>
-
-          <div class="news-item news-item--featured">
-            <div class="news-date">Jul 2025</div>
-            <div>
-              Our papers titled <br> - <i>IndoSafety: Culturally Grounded Safety for LLMs in Indonesian Languages</i> <br> - <i> What Do Indonesians Really Need from Language Technology? A Nationwide Survey</i> <br> was accepted at <strong>EMNLP 2025 Main</strong>. I presented the later in Suzhou, China. Nice to meet you there!👋
-            </div>
-          </div>
-
-          <div class="news-item news-item--featured">
-            <div class="news-date">Nov 2024</div>
-            <div>
-              Started a new position as <strong>Research Associate I</strong> (now: Research Engineer II) at <strong>Mohamed bin Zayed University of Artificial Intelligence (MBZUAI)</strong> under supervision of <u>Fajri Koto</u>.
-            </div>
-          </div>
-
-          <div class="news-item news-item--extra">
-            <div class="news-date">Nov 2023</div>
-            <div>
-              Our paper titled '<i>IndoToD: A multi-domain Indonesian benchmark for end-to-end task-oriented dialogue systems</i>' is accepted and selected as the <b>Best Paper</b> on SEALP 2023 Workshop, co-located with AACL-IJCNLP 2023 in Bali, Indonesia.🏆
-            </div>
-          </div>
-
-          <div class="news-item news-item--extra">
-            <div class="news-date">Oct 2023</div>
-            <div>
-              I went to Tokyo, Japan to become a delegate of <b>Institut Teknologi Bandung</b> in a technology and cultural exchange program hosted by The <u>University of Electro-Communications (UEC)</u>.🌸
-            </div>
-          </div>
-
-          <div class="news-item news-item--extra">
-            <div class="news-date">Nov 2021</div>
-            <div>
-              Became a finalist of <b>Pusat Prestasi Nasional GEMASTIK - Smart City Division</b>. We developed 'Virtual Hospital', an IoT-based technology to monitor the patient virtually because of the impact of COVID-19.
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- Contact -->
     <section id="contact">
       <div class="section-card">
@@ -527,7 +571,7 @@
 
   <footer>
     <div>© <span id="year"></span> Muhammad Dehan Al Kautsar</div>
-    <div>Last edited on 2025/12/02</div>
+    <div>Last edited on 08/04/2026</div>
   </footer>
 
   <!-- Main JS -->
