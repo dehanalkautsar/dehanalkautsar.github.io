@@ -16,7 +16,7 @@
 
 /* Dark theme overrides */
 html[data-theme="dark"] {
-  --bg: #0c0e20;
+  --bg: #171928;
   --bg-alt: #020617;
   --accent: #ab3bf6;
   --accent-soft: #b855f9;
