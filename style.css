@@ -17,12 +17,12 @@
 /* Dark theme overrides */
 html[data-theme="dark"] {
   --bg: #171928;
-  --bg-alt: #020617;
+  --bg-alt: #1e2440;
   --accent: #ab3bf6;
   --accent-soft: #b855f9;
   --text: #e5e7eb;
-  --text-muted: #9ca3af;
-  --border: #1f2937;
+  --text-muted: #bfc5d0;
+  --border: #26323f;
 }
 /* Dark theme for the icons */
 html[data-theme="dark"] .contact-icon.github   { content: url("assets/icons/github-dark.svg"); }
@@ -48,7 +48,7 @@ html.theme-transition * {
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
 
@@ -162,7 +162,7 @@ nav {
   border: 1px solid var(--border);
   color: var(--text);
   padding: 0.3rem 0.7rem;
-  font-size: 0.8rem;
+  font-size: 1.1rem;
   background: var(--bg-alt);
   cursor: pointer;
 }
@@ -208,7 +208,7 @@ section {
 }
 
 .section-title {
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
@@ -238,7 +238,7 @@ section {
 }
 
 .intro-heading {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 450;
   margin-bottom: 0.7rem;
 }
@@ -254,7 +254,7 @@ section {
 }
 
 .intro-text {
-  font-size: 0.95rem;
+  font-size: 0.93rem;
   color: var(--text-muted);
   line-height: 1.6;
   margin-bottom: 0.9rem;
@@ -373,7 +373,7 @@ html[data-theme="dark"] .avatar-tooltip {
   grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
   column-gap: 0.8rem;
   row-gap: 0.25rem;
-  font-size: 0.88rem;
+  font-size: 0.95rem;
 }
 
 .timeline-main {
@@ -397,7 +397,7 @@ html[data-theme="dark"] .avatar-tooltip {
 
 .timeline-sub {
   grid-column: 1 / -1;
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
 }
 
@@ -406,7 +406,7 @@ html[data-theme="dark"] .avatar-tooltip {
 .pub-list {
   display: flex;
   flex-direction: column;
-  font-size: 0.86rem;
+  font-size: 0.95rem;
 }
 
 .pub-item + .pub-item {
@@ -422,23 +422,23 @@ html[data-theme="dark"] .avatar-tooltip {
 .pub-author {
   font-weight: 200;
   margin-bottom: 0.25rem;
-  font-size: 0.75rem;
+  font-size: 0.85rem;
 }
 
 .pub-title {
   font-weight: 500;
   margin-bottom: 0.25rem;
-  font-style: italic;
+  /* font-style: italic; */
 }
 
 .pub-venue {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--text-muted);
   margin-bottom: 0.25rem;
 }
 
 .pub-venue .pub-best-paper {
-  font-size: 0.78rem;
+  font-size: 0.85rem;
   color: var(--text);
   background-color: var(--accent);
   margin-bottom: 0.25rem;
@@ -517,12 +517,12 @@ html[data-theme="dark"] .avatar-tooltip {
 
 html[data-theme="dark"] #pubToggleBtn:not(.expanded) {
   background: #b855f9;
-  color: #eee;
+  color: #e5e7eb;
 }
 
 /* Expanded state */
 html[data-theme="dark"] #pubToggleBtn.expanded {
-  background: #eee;
+  background: #e5e7eb;
   color: #b855f9;
 }
 
@@ -531,7 +531,7 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 .news-list {
   display: flex;
   flex-direction: column;
-  font-size: 0.80rem;
+  font-size: 0.85rem;
 }
 
 .news-item + .news-item {
@@ -541,14 +541,15 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 .news-item {
   display: flex;
   align-items: baseline;
-  gap: 0.80rem;
+  gap: 1rem;
+  line-height: 1.3rem;
   border-radius: 8px;
   border: 1.0px solid var(--border);
   padding: 0.6rem 0.8rem;
 }
 
 .news-date {
-  font-size: 0.80rem;
+  font-size: 0.9rem;
   color: var(--text-muted);
   min-width: 5.2rem;
   white-space: nowrap;
@@ -619,12 +620,12 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 
 html[data-theme="dark"] #newsToggleBtn:not(.expanded) {
   background: #b855f9;
-  color: #eee;
+  color: #e5e7eb;
 }
 
 /* Expanded state */
 html[data-theme="dark"] #newsToggleBtn.expanded {
-  background: #eee;
+  background: #e5e7eb;
   color: #b855f9;
 }
 
@@ -645,7 +646,7 @@ html[data-theme="dark"] #newsToggleBtn.expanded {
 }
 
 .contact-label {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.18em;
   color: var(--text-muted);
