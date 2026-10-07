@@ -331,6 +331,16 @@ section {
   transition: opacity 0.25s ease, transform 0.25s ease;
 }
 
+.avatar-tooltip .inline-icon {
+  width: 1.2em;
+  height: 1.2em;
+  border-radius: 50%;       /* circle; use 3px for a rounded square */
+  object-fit: cover;        /* crops instead of squishing */
+  vertical-align: -0.25em;  /* aligns with the text baseline like an emoji */
+  margin: 0 1px;
+  display: inline-block;
+}
+
 /* show on hover */
 .avatar-simple:hover + .avatar-tooltip {
   opacity: 1;
