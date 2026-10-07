@@ -18,8 +18,8 @@
 html[data-theme="dark"] {
   --bg: #171928;
   --bg-alt: #1e2440;
-  --accent: #ab3bf6;
-  --accent-soft: #b855f9;
+  --accent: #763bf6;
+  --accent-soft: #8655f9;
   --text: #e5e7eb;
   --text-muted: #bfc5d0;
   --border: #26323f;
@@ -516,14 +516,14 @@ html[data-theme="dark"] .avatar-tooltip {
 }
 
 html[data-theme="dark"] #pubToggleBtn:not(.expanded) {
-  background: #b855f9;
+  background: #8655f9;
   color: #e5e7eb;
 }
 
 /* Expanded state */
 html[data-theme="dark"] #pubToggleBtn.expanded {
   background: #e5e7eb;
-  color: #b855f9;
+  color: #8655f9;
 }
 
 /* ===== News ===== */
@@ -619,14 +619,14 @@ html[data-theme="dark"] #pubToggleBtn.expanded {
 }
 
 html[data-theme="dark"] #newsToggleBtn:not(.expanded) {
-  background: #b855f9;
+  background: #8655f9;
   color: #e5e7eb;
 }
 
 /* Expanded state */
 html[data-theme="dark"] #newsToggleBtn.expanded {
   background: #e5e7eb;
-  color: #b855f9;
+  color: #8655f9;
 }
 
 /* ===== Contact ===== */
