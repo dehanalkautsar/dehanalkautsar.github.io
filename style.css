@@ -339,6 +339,7 @@ section {
   vertical-align: -0.25em;  /* aligns with the text baseline like an emoji */
   margin: 0 1px;
   display: inline-block;
+  max-width: min(260px, 80vw);
 }
 
 /* show on hover */
