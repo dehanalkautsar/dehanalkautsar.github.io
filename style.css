@@ -48,7 +48,7 @@ html.theme-transition * {
 html,
 body {
   scroll-behavior: smooth;
-  font-family: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  font-family: "Figtree", "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
     sans-serif;
 }
 
